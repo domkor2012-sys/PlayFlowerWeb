@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="pl">
 <head>
   <meta charset="UTF-8" />
@@ -8,18 +9,32 @@
   <meta name="theme-color" content="#0b1220" />
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <div class="bg-orbs" aria-hidden="true"><span></span><span></span><span></span></div>
+  <div class="bg-orbs" aria-hidden="true">
+    <span></span><span></span><span></span>
+  </div>
 
   <header class="site-header">
     <a class="brand" href="#start" aria-label="PlayFlower">
       <div class="brand-icon">✿</div>
-      <div><strong>PlayFlower</strong><small>Minecraft Network</small></div>
+      <div>
+        <strong>PlayFlower</strong>
+        <small>Minecraft Network</small>
+      </div>
     </a>
-    <button class="nav-toggle" id="navToggle" aria-label="Otwórz menu">☰</button>
-    <nav class="nav" id="nav">
-      <a href="#tryby">Tryby</a><a href="#nowosci">Nowości</a><a href="#dolacz">Dołącz</a><a href="#kontakt">Kontakt</a>
-    </nav>
+
+```
+<button class="nav-toggle" id="navToggle" aria-label="Otwórz menu">☰</button>
+
+<nav class="nav" id="nav">
+  <a href="#tryby">Tryby</a>
+  <a href="#nowosci">Nowości</a>
+  <a href="#dolacz">Dołącz</a>
+  <a href="https://discord.gg/nn8P6C8NCT" target="_blank" rel="noopener">Discord</a>
+</nav>
+```
+
   </header>
 
   <main>
@@ -27,56 +42,175 @@
       <div class="hero-content">
         <p class="eyebrow">🌸 Nowa przygoda w świecie Minecraft</p>
         <h1>Wejdź do świata <span>PlayFlower</span></h1>
-        <p class="hero-text">Klimatyczny serwer Minecraft z minigrami, ekonomią, nagrodami i miejscem, w którym naprawdę chce się zostać na dłużej.</p>
-        <div class="hero-actions">
-          <button class="copy-btn" data-copy="playflower.blackhost.pl">Skopiuj IP serwera</button>
-          <a class="ghost-btn" href="#tryby">Zobacz tryby</a>
-        </div>
-        <div class="server-card"><span>Adres serwera</span><strong id="serverIp">playflower.blackhost.pl</strong><small>Kliknij przycisk, aby skopiować adres.</small></div>
-      </div>
-      <div class="hero-panel" aria-label="Panel PlayFlower">
-        <div class="panel-top"><span></span><span></span><span></span></div>
-        <div class="minecraft-card">
-          <div class="cube">✿</div><h2>PlayFlower</h2><p>Survival • OneBlock • WaterBlock • Minigry</p>
-          <div class="status"><span class="dot"></span><strong>Online</strong></div>
-        </div>
-      </div>
-    </section>
+        <p class="hero-text">
+          Klimatyczny serwer Minecraft z minigrami, ekonomią, nagrodami i miejscem,
+          w którym naprawdę chce się zostać na dłużej.
+        </p>
 
-    <section class="section" id="tryby">
-      <div class="section-head"><p class="eyebrow">🎮 Tryby gry</p><h2>Wybierz swoją przygodę</h2><p>Od spokojnego budowania po szybkie minigry — każdy znajdzie coś dla siebie.</p></div>
-      <div class="modes-grid">
-        <article class="mode-card"><div class="mode-icon">🌍</div><h3>Survival</h3><p>Klasyczna rozgrywka, budowanie, eksploracja i ekonomia oparta na Kwiatkach.</p></article>
-        <article class="mode-card"><div class="mode-icon">🧱</div><h3>OneBlock</h3><p>Zacznij od jednego bloku i rozbuduj własną wyspę krok po kroku.</p></article>
-        <article class="mode-card"><div class="mode-icon">💧</div><h3>WaterBlock</h3><p>Wodna przygoda i wyzwanie dla graczy, którzy lubią nietypowy start.</p></article>
-        <article class="mode-card"><div class="mode-icon">🍀</div><h3>LuckyBlock</h3><p>Losowe nagrody, pułapki i emocje. Nigdy nie wiesz, co wypadnie.</p></article>
-        <article class="mode-card"><div class="mode-icon">💣</div><h3>TNT Run</h3><p>Biegnij, skacz i przetrwaj jak najdłużej na znikających blokach.</p></article>
-        <article class="mode-card"><div class="mode-icon">🚤</div><h3>BoatRun</h3><p>Dynamiczna walka o punkty na wodzie. Szybkość i refleks mają znaczenie.</p></article>
-        <article class="mode-card"><div class="mode-icon">🎨</div><h3>Flower Build</h3><p>Buduj na czas, głosuj na prace innych i pokaż kreatywność.</p></article>
-        <article class="mode-card"><div class="mode-icon">😴</div><h3>Strefa odpoczynku</h3><p>AFK, chill music, nagrody i spokojny klimat między rozgrywkami.</p></article>
-      </div>
-    </section>
+```
+    <div class="hero-actions">
+      <button class="copy-btn" data-copy="playflower.blackhost.pl">
+        Skopiuj IP serwera
+      </button>
+      <a class="ghost-btn" href="https://discord.gg/nn8P6C8NCT" target="_blank" rel="noopener">
+        Dołącz do Discorda
+      </a>
+      <a class="ghost-btn" href="#tryby">Zobacz tryby</a>
+    </div>
 
-    <section class="feature-strip" id="nowosci">
-      <div><p class="eyebrow">✨ Dlaczego PlayFlower?</p><h2>Serwer z klimatem, nie tylko z trybami</h2></div>
-      <div class="features">
-        <div><strong>✿ Kwiatki</strong><span>Ekonomia i nagrody za aktywność.</span></div>
-        <div><strong>🎁 Daily</strong><span>Codzienne bonusy i system nagród.</span></div>
-        <div><strong>🎵 Chill AFK</strong><span>Muzyka i spokojna strefa odpoczynku.</span></div>
-        <div><strong>🏆 Eventy</strong><span>Rywalizacja, zabawa i nowości.</span></div>
-      </div>
-    </section>
+    <div class="server-card">
+      <span>Adres serwera</span>
+      <strong id="serverIp">playflower.blackhost.pl</strong>
+      <small>Kliknij przycisk, aby skopiować adres.</small>
+    </div>
+  </div>
 
-    <section class="join" id="dolacz">
-      <div class="join-box"><p class="eyebrow">🚀 Start</p><h2>Dołącz do PlayFlower</h2><p>Skopiuj IP serwera, wejdź do Minecrafta, dodaj serwer i rozpocznij przygodę. Discord znajdziesz na serwerze komendą <strong>/discord</strong>.</p>
-        <div class="steps"><div><b>1</b><span>Uruchom Minecraft Java</span></div><div><b>2</b><span>Dodaj serwer PlayFlower</span></div><div><b>3</b><span>Wpisz adres IP i graj</span></div></div>
-        <button class="copy-btn wide" data-copy="TUTAJ_WPISZ_IP_SERWERA">Skopiuj IP serwera</button>
+  <div class="hero-panel" aria-label="Panel PlayFlower">
+    <div class="panel-top">
+      <span></span><span></span><span></span>
+    </div>
+    <div class="minecraft-card">
+      <div class="cube">✿</div>
+      <h2>PlayFlower</h2>
+      <p>Survival • OneBlock • WaterBlock • Minigry</p>
+      <div class="status">
+        <span class="dot"></span>
+        <strong>Online</strong>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="tryby">
+  <div class="section-head">
+    <p class="eyebrow">🎮 Tryby gry</p>
+    <h2>Wybierz swoją przygodę</h2>
+    <p>Od spokojnego budowania po szybkie minigry — każdy znajdzie coś dla siebie.</p>
+  </div>
+
+  <div class="modes-grid">
+    <article class="mode-card">
+      <div class="mode-icon">🌍</div>
+      <h3>Survival</h3>
+      <p>Klasyczna rozgrywka, budowanie, eksploracja i ekonomia oparta na Kwiatkach.</p>
+    </article>
+
+    <article class="mode-card">
+      <div class="mode-icon">🧱</div>
+      <h3>OneBlock</h3>
+      <p>Zacznij od jednego bloku i rozbuduj własną wyspę krok po kroku.</p>
+    </article>
+
+    <article class="mode-card">
+      <div class="mode-icon">💧</div>
+      <h3>WaterBlock</h3>
+      <p>Wodna przygoda i wyzwanie dla graczy, którzy lubią nietypowy start.</p>
+    </article>
+
+    <article class="mode-card">
+      <div class="mode-icon">🍀</div>
+      <h3>LuckyBlock</h3>
+      <p>Losowe nagrody, pułapki i emocje. Nigdy nie wiesz, co wypadnie.</p>
+    </article>
+
+    <article class="mode-card">
+      <div class="mode-icon">💣</div>
+      <h3>TNT Run</h3>
+      <p>Biegnij, skacz i przetrwaj jak najdłużej na znikających blokach.</p>
+    </article>
+
+    <article class="mode-card">
+      <div class="mode-icon">🚤</div>
+      <h3>BoatRun</h3>
+      <p>Dynamiczna walka o punkty na wodzie. Szybkość i refleks mają znaczenie.</p>
+    </article>
+
+    <article class="mode-card">
+      <div class="mode-icon">🎨</div>
+      <h3>Flower Build</h3>
+      <p>Buduj na czas, głosuj na prace innych i pokaż kreatywność.</p>
+    </article>
+
+    <article class="mode-card">
+      <div class="mode-icon">😴</div>
+      <h3>Strefa odpoczynku</h3>
+      <p>AFK, chill music, nagrody i spokojny klimat między rozgrywkami.</p>
+    </article>
+  </div>
+</section>
+
+<section class="feature-strip" id="nowosci">
+  <div>
+    <p class="eyebrow">✨ Dlaczego PlayFlower?</p>
+    <h2>Serwer z klimatem, nie tylko z trybami</h2>
+  </div>
+
+  <div class="features">
+    <div>
+      <strong>✿ Kwiatki</strong>
+      <span>Ekonomia i nagrody za aktywność.</span>
+    </div>
+    <div>
+      <strong>🎁 Daily</strong>
+      <span>Codzienne bonusy i system nagród.</span>
+    </div>
+    <div>
+      <strong>🎵 Chill AFK</strong>
+      <span>Muzyka i spokojna strefa odpoczynku.</span>
+    </div>
+    <div>
+      <strong>🏆 Eventy</strong>
+      <span>Rywalizacja, zabawa i nowości.</span>
+    </div>
+  </div>
+</section>
+
+<section class="join" id="dolacz">
+  <div class="join-box">
+    <p class="eyebrow">🚀 Start</p>
+    <h2>Dołącz do PlayFlower</h2>
+    <p>
+      Skopiuj IP serwera, wejdź do Minecrafta, dodaj serwer i rozpocznij przygodę.
+      Dołącz też do naszej społeczności na Discordzie.
+    </p>
+
+    <div class="steps">
+      <div><b>1</b><span>Uruchom Minecraft Java</span></div>
+      <div><b>2</b><span>Dodaj serwer PlayFlower</span></div>
+      <div><b>3</b><span>Wpisz adres IP i graj</span></div>
+    </div>
+
+    <div class="hero-actions" style="justify-content: center;">
+      <button class="copy-btn wide" data-copy="playflower.blackhost.pl">
+        Skopiuj IP serwera
+      </button>
+      <a class="ghost-btn" href="https://discord.gg/nn8P6C8NCT" target="_blank" rel="noopener">
+        Dołącz do Discorda
+      </a>
+    </div>
+  </div>
+</section>
+```
+
   </main>
 
-  <footer class="footer" id="kontakt"><div><strong>PlayFlower</strong><p>Minimalistyczna strona serwera Minecraft przygotowana pod GitHub Pages.</p></div><div class="footer-links"><a href="#start">Start</a><a href="#tryby">Tryby</a><a href="#dolacz">Dołącz</a></div></footer>
+  <footer class="footer" id="kontakt">
+    <div>
+      <strong>PlayFlower</strong>
+      <p>Adres serwera: <b>playflower.blackhost.pl</b></p>
+      <p>Discord: <a href="https://discord.gg/nn8P6C8NCT" target="_blank" rel="noopener">discord.gg/nn8P6C8NCT</a></p>
+    </div>
+    <div class="footer-links">
+      <a href="#start">Start</a>
+      <a href="#tryby">Tryby</a>
+      <a href="#dolacz">Dołącz</a>
+      <a href="https://discord.gg/nn8P6C8NCT" target="_blank" rel="noopener">Discord</a>
+    </div>
+  </footer>
+
   <div class="toast" id="toast">Skopiowano IP serwera!</div>
+
   <script src="script.js"></script>
+
 </body>
 </html>
