@@ -8,3 +8,5 @@ Zastąp pliki w repozytorium `PlayFlowerWeb` zawartością tego folderu i wykona
 
 Adres serwera: `playflower.blackhost.pl`  
 Discord: `https://discord.gg/nn8P6C8NCT`
+
+Logo strony: `logo-playflower.png`
