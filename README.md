@@ -1,15 +1,10 @@
-# PlayFlower — strona pod GitHub Pages
+# PlayFlowerWeb
 
-Gotowa, statyczna strona serwera Minecraft PlayFlower.
+Nowoczesna strona serwera Minecraft PlayFlower.
 
-## Jak wrzucić na GitHub Pages
+## Publikacja na GitHub Pages
 
-1. Utwórz repozytorium na GitHubie, np. `playflower`.
-2. Wrzuć pliki `index.html`, `style.css`, `script.js`.
-3. Wejdź w `Settings` → `Pages`.
-4. Wybierz `Deploy from a branch`, branch `main`, folder `/root`.
-5. Zapisz.
+Zastąp pliki w repozytorium `PlayFlowerWeb` zawartością tego folderu i wykonaj commit. GitHub Pages automatycznie opublikuje nową wersję.
 
-## Co zmienić przed publikacją
-
-W pliku `index.html` znajdź `TUTAJ_WPISZ_IP_SERWERA` i zamień na prawdziwy adres serwera, np. `playflower.pl`.
+Adres serwera: `playflower.blackhost.pl`  
+Discord: `https://discord.gg/nn8P6C8NCT`
