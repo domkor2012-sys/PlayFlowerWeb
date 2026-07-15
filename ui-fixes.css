@@ -8,3 +8,17 @@
 .card-two{top:115px;bottom:auto;right:-30px}
 @media(max-width:1100px){.card-two{right:-10px}}
 @media(max-width:820px){.float-card{display:none}}
+
+/* Animacje kart w sekcji „Więcej niż serwer” */
+.benefits article{position:relative;overflow:hidden;isolation:isolate;transition:transform .32s cubic-bezier(.2,.8,.2,1),border-color .32s ease,box-shadow .32s ease,background .32s ease}
+.benefits article::before{content:"";position:absolute;z-index:-1;width:170px;height:170px;right:-95px;bottom:-105px;border-radius:50%;background:radial-gradient(circle,rgba(93,218,255,.2),rgba(155,124,255,.1) 45%,transparent 72%);opacity:0;transform:scale(.65);transition:opacity .35s ease,transform .45s ease}
+.benefits article>span{display:inline-block;transition:transform .32s cubic-bezier(.2,.8,.2,1),filter .32s ease}
+.benefits article:hover{transform:translateY(-7px);border-color:rgba(130,184,255,.32);background:rgba(255,255,255,.045);box-shadow:0 22px 45px rgba(0,0,0,.22),0 0 34px rgba(104,111,255,.08)}
+.benefits article:hover::before{opacity:1;transform:scale(1)}
+.benefits article:hover>span{transform:translateY(-2px) scale(1.14) rotate(-4deg);filter:drop-shadow(0 0 10px rgba(92,218,255,.35))}
+.benefits article.visible{animation:benefitIn .58s cubic-bezier(.2,.8,.2,1) both}
+.benefits article.visible:nth-child(2){animation-delay:.08s}
+.benefits article.visible:nth-child(3){animation-delay:.16s}
+.benefits article.visible:nth-child(4){animation-delay:.24s}
+@keyframes benefitIn{from{opacity:0;transform:translateY(24px) scale(.97)}to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){.benefits article,.benefits article::before,.benefits article>span{transition:none;animation:none!important}.benefits article:hover{transform:none}}
